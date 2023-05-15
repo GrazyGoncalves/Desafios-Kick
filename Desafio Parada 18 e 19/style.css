@@ -1,0 +1,15 @@
+body {
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+  }
+  
+  h1 {
+    width:40%;
+    margin:auto;
+    text-align: center;
+  }
+  
+  button {
+    margin: 20px auto;
+    display: block;
+  }
