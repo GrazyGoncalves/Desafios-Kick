@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eleição</title>
+</head>
+<body>
+  <div id="main" style="color: blueviolet; font-size: 100px; text-align: center;"></div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function(){
+  // Variáveis para contar os votos
+  var candidato1 = 0;
+  var candidato2 = 0;
+  var candidato3 = 0;
+  var candidato4 = 0;
+  var votosNulos = 0;
+
+  var continuarVotando = true;
+
+  while (continuarVotando){
+    console.log("Eleição - Escolha o número do candidato:");
+    console.log("1. Candidato A");
+    console.log("2. Candidato B");
+    console.log("3. Candidato C");
+    console.log("4. Candidato D");
+    console.log("5. Voto nulo/branco");
+    console.log("6. Sair");
+
+    var voto = prompt("Digite a opcão do candidato: 1. Pedro José | 2. Maria da Luz | 3. Luiz do Sindicato | 4. Lizete | 5. Voto nulo/branco | 6. para sair:");
+   
+    switch (voto){
+      case '1':
+        candidato1++;
+        break;
+      case '2':
+        candidato2++;
+        break;
+      case '3':
+        candidato3++;
+        break;
+      case '4':
+        candidato4++;
+        break;
+      case '5':
+        votosNulos++;
+        break;
+      case '6':
+        continuarVotando = false;
+        break;
+      default:
+        console.log("Opção inválida! Tente novamente com uma opção válida.");
+    }
+  }
+
+  console.log("Resultado da Eleição 1º Turno:");
+  console.log("Candidato A Pedro Jose: " + candidato1 + " votos");
+  console.log("Candidato B Maria da Luz: " + candidato2 + " votos");
+  console.log("Candidato C Luiz do Sindicato: " + candidato3 + " votos");
+  console.log("Candidato D Lizete: " + candidato4 + " votos");
+  console.log("Votos nulos/brancos: " + votosNulos);
+});
+
+</script>
+ </body>
+</html>
