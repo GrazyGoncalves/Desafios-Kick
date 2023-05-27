@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(79, 124, 96);
+           
+        }
+        .main{
+            margin: auto;
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            margin-top: 5%;
+        }
+        button{
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            display: inline-flex;
+            justify-content: space-around;
+            cursor: pointer;
+            border: 3px black solid;
+            background-color: rgb(202, 172, 90);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Quiz da Grazi</h1>
+        <button onclick="quiz('musica')">Música</button>
+        <button onclick="quiz('futebol')">Futebol</button>
+        <button onclick="quiz('academia')">Academia</button>
+        <button onclick="quiz('serie')">Série</button>
+    </div>
+    <script>
+        function quiz(item){
+            switch(item){
+            case "musica":
+            resposta = prompt("Djavan nasceu em Pernambuco? Verdadeiro ou Falso").toLowerCase()
+            if(resposta == "falso"){
+            pontuacao++
+            }else{
+            alert("resposta incorreta, ...")
+            }
+            break
+
+            case "futebol":
+            resposta = prompt("Palmeiras ganhou o Campeonato Brasileiro do ano 2022? Verdadeiro ou Falso").toLowerCase()
+            if(resposta == "verdadeiro"){
+            pontuacao++
+            alert("resposta incorreta, ...")
+            }
+            break
+
+            case "academia":
+            resposta = prompt("Devemos aquecer na esteira antes de treinar MMII? Verdadeiro ou Falso").toLowerCase()
+            if(resposta == "falso"){
+            pontuacao++
+            }else{
+            alert("resposta incorreta, ...")
+            }
+            break
+
+            case "serie":
+            resposta = prompt("No seriado Chaves, é o Sr. Barriga que mora na casa de número 71? Verdadeiro ou Falso").toLowerCase()
+            if(resposta == "falso"){
+            pontuacao++
+            }else{
+            alert("resposta incorreta, ...")
+            }
+            break
+
+
+            default:
+            alert("item invalido")
+            break
+            }
+        }
+    </script>
+</body>
+</html>
