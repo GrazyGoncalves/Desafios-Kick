@@ -1,0 +1,571 @@
+* {
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+
+}
+
+:root {
+--color-prim: #1BC7BC;
+--color-secund: #9B8B8B;
+--color-terc: #ECE7E7;
+--color-quart: #0F3BD8;
+}
+/*
+header {
+    height: 100vh;
+    background: url(img/fundo.jpg) center center no-repeat;
+    background-size: cover;
+
+}*/
+#header img{
+    min-width: 100%;
+    position: block;
+}
+#header h1{
+    position: absolute;
+    top: 450px;
+    color: white;
+    margin-top: 500px;
+    margin-left: 70px;
+}
+
+header,.main-section, footer{
+    border-style: none;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25rem;
+}
+
+.box-content{
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 150px;
+    color:black;
+    border: 1px black solid;
+    margin-left: 20%;
+    height: 130px;
+    width: 60%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+.box-content .buttom, p {
+    margin-top: 50px;
+}
+.buttom{
+    background-color: rgb(209, 3, 3);
+    color:white;
+    float: right;
+    border: solid 1px;
+    list-style-type: none;
+    width: 130px;
+    height: 45px;
+    display: flex;
+    border-radius: 150px;
+}
+.buttom li{
+    margin-top: 5px;
+}
+/*
+#viagens-grupo img{
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+#viagen-grupo h3, h2, p{
+    position: absolute;
+}*/
+
+.islandia{
+    width: 50%;
+    padding: 100px;
+    color: white;
+    float: left;
+    flex-direction: row;
+}
+.islandia img{
+    position: block;
+}
+
+.islandia h3{
+    float: left;
+    padding: 50px;
+    position: absolute;
+    top: 200px;
+    margin-top: 95%;
+    margin-right: 50%;
+}
+.islandia h2{
+    position: absolute;
+    top: 200px;
+    margin-top: 103%;
+    margin-left: 50px;
+    margin-right: 60%;
+}
+.islandia p{
+    padding-top: 105%;
+    margin-left: 50px;
+    margin-right: 750px;
+    position: absolute;
+    top: 190px;
+}
+.monte{
+    width: 50%;
+    padding: 90px;
+    color: black;
+    float: right;
+    flex-direction: row;
+}
+.monte img{
+    position: block;
+    float: right;
+}
+
+.monte h3{
+    float: left;
+    position: absolute;
+    top: 200px;
+    margin-top: 98%;
+    margin-right: 20%;
+    margin-left: 0px;
+}
+.monte h2{
+    position: absolute;
+    top: 200px;
+    margin-top: 102%;
+    margin-right: 10%;
+    margin-left: 0px;
+}
+.monte p{
+    padding-top: 105%;
+    position: absolute;
+    top: 190px;
+    margin-right: 10%;
+}
+.bt{
+    justify-content: space-around;
+    position: absolute;
+    top: 50px;
+    margin-top: 130%;
+    margin-left: 50px;
+    margin-right: 100%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+.chapada-dos-veadeiros{
+    color: white;
+    float: left;
+    flex-direction: row;
+}
+.chapada-dos-veadeiros img{
+    margin-left: 93px;
+    position: block;
+}
+.chapada-dos-veadeiros h3{
+    color:white;
+    position: absolute;
+    top: 100%;
+    margin-top: 115%;
+    margin-left: 10%;
+    margin-right: 50%;
+}
+.chapada-dos-veadeiros p{
+    color:white;
+    padding-top: 105%;
+    margin-left: 10%;
+    margin-right: 50%;
+    position: absolute;
+    top: 120%;
+}
+.bt-chapada{
+    background-color: white;
+    color:black;
+    float: right;
+    border: solid 1px;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 130px;
+    height: 45px;
+    display: flex;
+    border-radius: 150px;
+    position: absolute;
+    margin-right: 20%;
+    margin-left: 10%;
+    top: 150px;
+    margin-top: 162%;
+}
+
+#container{
+    float: right;
+    background-color: rgb(255, 255, 255);
+    border-radius: 80px;
+    color:black;
+    border: 1px black solid;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 250px;
+    height: 350px;
+    display: inline-flex;
+    text-align: center;
+    flex-direction: row;
+}
+#container p{
+    position: absolute;
+    margin-top: 6%;
+    padding: 0px;
+    margin-right: 7%;
+    font-size: 35px;
+}
+#container .buttom{
+    width: 170px;
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 4%;
+    margin-right: 10%;
+    justify-content: center;
+}
+.buttom li{
+    margin-top: 14px;
+}
+.destinos-procurados{
+    padding: 6%;
+    border: none;
+    margin-right: 30%;
+    width: 100%;
+    display: flex;
+    float: left;
+    text-align: left;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: left;
+    font-size: 1.10em;
+    font-weight: 500;
+}
+.veja a{
+    display: flex;
+    float: right;
+    text-align: right;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 5%;
+
+}
+
+#imagens img{
+    align-items: center;
+    position: block;
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.transform img{
+    min-width: 100%;
+    position: block;
+}
+.transform h3{
+    position: absolute;
+    top: 350px;
+    margin-top: 235%;
+    margin-right: 48%;
+    margin-left: 8%;
+    justify-content: center;
+    flex-wrap:nowrap;
+    font-size: 4em;
+    color: white;
+}
+.bt-adv{
+    position: absolute;
+    background-color: rgb(209, 3, 3);
+    color:white;
+    border: solid 1px black;
+    justify-content: center;
+    list-style-type: none;
+    width: 400px;
+    height: 45px;
+    top: 350px;
+    margin-top: 253%;
+    margin-right: 30%;
+    margin-left: 20%;
+    display: flex;
+    border-radius: 150px;
+}
+
+.bt-adv li, a{
+    color: white;
+    padding: 7px;
+    align-items: center;
+    text-decoration: none;
+    List-style-type: none;
+    transform: none;
+    font-size: 1.10em;
+    font-weight: 500;
+}
+.caminhos-diamantes{
+    color:black;
+    background-color: rgb(226, 224, 224);
+    border: solid 1px black;
+    border-radius: 20px;
+    display: flex;
+    float:left;
+    width: 30%;
+    height: 450px;
+    margin-left: 170px;
+    margin-top: 45px;
+    padding: 40px;
+    text-align: center;
+    flex-direction: column;
+}
+.caminhos-diamantes p{
+    font-size: 1.17em;
+    font-weight: 200;
+}
+.caminhos-diamantes h2{
+    font-size: 1.6em;
+    font-weight: 200;
+}
+.cam-diamantes img{
+    float:right;
+    position: block;
+    margin-top: 35px;
+}
+.cam-diamantes h4{
+    position: absolute;
+    justify-content: center;
+    flex-wrap:nowrap;
+    margin-left: 48%;
+    padding-top: 210px;
+    font-size: 2em;
+    color: white;
+}
+.cam-diamantes h5{
+    position: absolute;
+    justify-content: center;
+    flex-wrap:nowrap;
+    margin-left: 48%;
+    margin-right: 10%;
+    padding-top: 260px;
+    font-size: 1.6em;
+    color: white;
+}
+.cam-diamantes p{
+    position: absolute;
+    justify-content: center;
+    flex-wrap:nowrap;
+    margin-left: 48%;
+    margin-right: 10%;
+    padding-top: 250px;
+    font-size: 1.3em;
+    color: white;
+}
+.conecte img{
+    align-items: center;
+    position: block;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 0px;
+    justify-content: space-around;
+    display: inline;
+    flex-wrap:nowrap;
+    flex-direction: row;
+}
+h6{
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+    font-size: 1.6em;
+}
+.logo-contato{
+    background-color: black;
+    color: white;
+    float:left;
+    width: 75%;
+    text-align: left;
+    position:block;
+    margin:0px;
+}
+.logo-contato img{
+    width: 400px;
+    height: 400px;
+    float:right;
+    display:flex;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.logo-contato p{
+    width: 450px;
+    float:left;
+    margin-left: 5%; 
+    display:block;
+}
+.logo-contato li{
+    width: 450px;
+    position: absolute;
+    float:left;
+    margin-left: 3%; 
+    margin-top: 112px;
+    List-style-type: none;
+}
+.logo-contato .minimalist{
+    top: 20px;
+    margin-top: 412%;
+    float:right;
+    width: 25%;
+    height: 438px; 
+    margin-left: 71%; 
+}
+.redes{
+    margin-top: 480px;
+    height: 40px;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dev p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+header img{
+    display: block;
+    margin: 1rem auto;
+}*/
+
+header nav{
+    display: grid;
+  
+}
+
+nav a {
+    color:#ECE7E7;
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-decoration: none;
+    text-align: right;
+    float: right;
+}
+
+.button {
+background-color: rgb(209, 3, 3);
+border: solid 1px black;
+color: white;
+display: block;
+font-size: 18px;
+padding: 1rem 1rem;
+max-width: 5rem;
+text-align: center;
+text-decoration: none;
+border-radius: 25px;
+}
+
+body{
+background: linear-gradient(90deg, #93AAFB 0%, #1BC7BC 100%);
+/* padding: 0 1rem; */
+}
+/*
+.mt-1 {
+margin-top: 1rem;
+}
+
+.mt-2{
+margin-top: 2rem;
+    }
+
+.mb-1{
+margin-bottom: 1rem;
+ }
+
+.mb-2{
+ margin-bottom: 2rem;
+ }
+
+ .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+ }
+/*
+ #container{
+margin: auto;
+display:flex;
+width: max-content;
+border: 2px solid black;
+ }
+ 
+
+ /*responsividade*//*
+
+ @media screen and (min-width: 40rem) {
+    header nav{
+    display: block;
+    text-align: center;
+    }
+
+    @media screen and (min-width: 48rem) {
+    header div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    
+
+    }
+ }
+}
+
+
+
+
+.viagens-em-grupo {
+    float: left;
+    width: 50%;
+    background: url(img/viagens-em-grupo.jpg) no-repeat center center;
+    min-height: 500px;
+    padding: 100px 10px;
+
+}
+
+.viagens-em-grupo > * {
+    float: right;
+    width: 50%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.viagens-em-grupo button {
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+}
+
+.viagens-em-grupo-2 {
+    float: right;
+    background: url(img/Monte\ Roraima.png) no-repeat center center;
+   
+
+}
+
+.viagens-em-grupo-2 > * {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.viagens-em-grupo-2 button {
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+}
