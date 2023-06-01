@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes Aleatórios</title>
+</head>
+<body>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: aquamarine;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: orangered;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: orangered; 
+    }
+
+    #nomeAleatorio {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+</style>
+
+<script>
+
+  function obterNomeAleatorio() {
+  var nomes = ["Graziella", "Richard", "Eduardo", "Gabriel", "Helena", "Osvaldo", "Patricia", "Valdemir", "Aline", "Erick"];
+  var indiceAleatorio = Math.floor(Math.random() * nomes.length);
+  var nomeAleatorio = nomes[indiceAleatorio];
+  return nomeAleatorio;
+}
+
+function exibirNomeAleatorio() {
+  var nomeAleatorio = obterNomeAleatorio();
+  document.getElementById("nomeAleatorio").textContent = nomeAleatorio;
+}
+</script>
+
+<h1>Clique no botão e obtenha um nome:</h1>
+
+<button onclick="exibirNomeAleatorio()">Obter Nome</button>
+<p id="nomeAleatorio"></p>
+    
+</script>
+</body>
+</html>
