@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300 & family= Roboto+Flex:wght@300;400 & family= Roboto:wght@ 300 & família= Ysabeau+Infant:ital,wght@0,200;1,200 & display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-logo {
+  width: 50px; /* Tamanho desejado */
+  height: auto;
+  margin-right: 20px; /* Espaçamento desejado entre o logotipo e o texto */
+  padding-left: 10px;
+ }
+
+.row {
+  margin: 0px;
+}
+
+.container {
+  padding: 70 px 0;
+}
+
+p, li {
+  color:#444;
+  font-size: 14px;
+}
+
+/* barra de navegação */
+header, .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 75px;
+}
+
+.buscar {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#exampleModal .modal-content {
+color: black; 
+align-items: left;
+}
+
+
+.card-body {
+text-align: center;
+}
+
+.roteiro {
+text-align: center;
+border-radius: 10px;
+}
+
+
+.redes{
+text-align: center;
+}
+
+.dev {
+text-align: center; 
+}
+
+.footer {
+text-align: center; 
+align-items: center;
+display: flex;
+position: relative;
+}
